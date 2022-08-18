@@ -9,12 +9,9 @@ git branch: 'development', credentialsId: '510957fa-4828-44ee-860c-c887caaa3577'
 stage('Build'){
 sh "${mavenHome}/bin/mvn clean package"
 }
-<!--
 stage('upload artifacts into artifactory repo'){
 sh "${mavenHome}/bin/mvn deploy"
-
 }
--->
 stage('DeployApplicationIntoTomcatServer'){
 sshagent(['3a6eae84-3a0f-4d39-8d56-df2c8d4833a0']){
 sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@3.108.60.215:/opt/apache-tomcat-9.0.65/webapps/"
