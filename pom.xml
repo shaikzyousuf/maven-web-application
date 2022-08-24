@@ -100,13 +100,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://3.110.83.219:8081/repository/Telegram-Release-repo/</url>
+	      <url>http://15.206.166.3:8081/repository/Telegram-Release-repo/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://3.110.83.219:8081/repository/Telegram-snapshot/</url>
+	      <url>http://15.206.166.3:8081/repository/Telegram-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
